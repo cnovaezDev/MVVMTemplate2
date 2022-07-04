@@ -3,44 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/viewContainer"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".view.MainActivity">
 
-    <ImageView
-        android:id="@+id/cityImageView"
-        android:layout_width="0dp"
-        android:layout_height="208dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitXY"
-
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tvQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello World"
+        android:textSize="24dp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/london" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/cityNameTextView"
+        android:id="@+id/tvAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="CityName"
-        android:padding="10dp"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Hello World"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityImageView" />
-    <TextView
-        android:id="@+id/cityPopulationTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Population"
-        android:padding="10dp"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityNameTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuote"
+        app:layout_constraintVertical_bias="0.876" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
