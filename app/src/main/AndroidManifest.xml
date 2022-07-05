@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mvvmtemplate">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +15,7 @@
         android:theme="@style/Theme.MVVMTemplate"
         tools:targetApi="31">
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.example.mvvmtemplate.ui.view.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MVVMTemplate.NoActionBar">
