@@ -7,8 +7,9 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.example.mvvmtemplate.databinding.ActivityMainBinding
 import com.example.mvvmtemplate.ui.viewmodel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding

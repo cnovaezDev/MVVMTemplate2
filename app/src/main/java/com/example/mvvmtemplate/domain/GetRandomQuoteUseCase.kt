@@ -3,8 +3,9 @@ package com.example.mvvmtemplate.domain
 import com.example.mvvmtemplate.data.QuoteRepository
 import com.example.mvvmtemplate.data.model.QuoteModel
 import com.example.mvvmtemplate.data.model.QuoteProvider
+import javax.inject.Inject
 
-class GetRandomQuoteUseCase {
+class GetRandomQuoteUseCase  @Inject constructor(){
 
     private val repository = QuoteRepository()
 

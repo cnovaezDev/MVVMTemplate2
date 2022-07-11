@@ -3,11 +3,12 @@ package com.example.mvvmtemplate.data
 import com.example.mvvmtemplate.data.model.QuoteModel
 import com.example.mvvmtemplate.data.model.QuoteProvider
 import com.example.mvvmtemplate.data.network.QuoteService
+import javax.inject.Inject
 
 /**
  * In charge of controlling if the app should use internet or work offline
  */
-class QuoteRepository {
+class QuoteRepository  @Inject constructor() {
 
     /**
      * New Instance of QuoteService class
