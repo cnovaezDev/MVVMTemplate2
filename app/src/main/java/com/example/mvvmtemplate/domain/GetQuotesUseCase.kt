@@ -5,7 +5,7 @@ import com.example.mvvmtemplate.data.model.QuoteModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
-class GetQuotesUseCase @Inject constructor(val repository:QuoteRepository) {
+class GetQuotesUseCase @Inject constructor(private val repository:QuoteRepository) {
 
    suspend operator fun invoke():List<QuoteModel>? = repository.getAllQuotes()
 
